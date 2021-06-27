@@ -21,10 +21,10 @@ VirtualBoxにCentOS7を入れることがあったので、その際の調べ物
 ### 手順
 1. CentOSの公式サイト([https://www.centos.org/download/](https://www.centos.org/download/))へ遷移。
 2. タブ「7(2009)」を押すと表が出てくるので、「x86_64」を押下
-![説明画像](/assets/VirtualBox-install-CentOS/image2.png)
+![説明画像](https://tou0624.github.io/assets/VirtualBox-install-CentOS/image2.png)
 3. ページがいくつか出てくるので、好きなページを押下。こだわりがなければ一番上のURLで大丈夫
 4. isoページが出てくるので、何か理由がなければいちばん上の「CentOS7-x86_64-DVD-[番号].iso」をダウンロード。MinimalにするとCUIだけ(黒い画面)になる。デスクトップのインストーラーを利用したセットアップが必要なミドルウェアを入れる場合はこれを使っちゃうと×
-![説明画像](/assets/VirtualBox-install-CentOS/image3.png)
+![説明画像](https://tou0624.github.io/assets/VirtualBox-install-CentOS/image3.png)
 
 ### メモ
 #### メジャーバージョンかつ最新ではないマイナーバージョンのisoはどこにある？
