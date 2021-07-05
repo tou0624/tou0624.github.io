@@ -13,7 +13,7 @@ JVMの基本的な構造を理解するために記載する。
 
 ## 構造
 Javaプロセスで利用するメモリは、Javaヒープ、Cヒープ、スレッドスタックの3領域に分割。  
-![画像](https://tou0624.github.io//assets/study-jvm-memory-management/test.svg)
+![画像](https://tou0624.github.io//assets/study-jvm-memory-management/image1.svg)
 
 | 名前 | メモ |
 | --- | --- |
@@ -29,11 +29,11 @@ Javaプロセスで利用するメモリは、Javaヒープ、Cヒープ、ス�
 Javaヒープの中は更に細かめに別れており、パラメータによるチューニング実施時はこちらの領域が焦点となることが多い。
 こんな感じ。
 ※この辺、説明するサイトによって用語の定義がバラバラなので注意・・・
-![画像](https://tou0624.github.io//assets/study-jvm-memory-management/test2.svg)
+![画像](https://tou0624.github.io//assets/study-jvm-memory-management/image2.svg)
 
 JVMの各領域には役割があるが、以下の図でオレンジ色の部分がオブジェクトを管理する部分となる。  
 ※よく見かける「Xmx」などのパラメータの対応範囲もあわせて記載。
-![画像](https://tou0624.github.io//assets/study-jvm-memory-management/test3.svg)
+![画像](https://tou0624.github.io//assets/study-jvm-memory-management/image3.svg)
 
 各領域の大まかな説明。オブジェクトを効率的に管理するために3つの領域を作り、うまくやっている模様。
 
@@ -62,7 +62,7 @@ GC(ガベージコレクション)は2種類ある。
 Permanent領域もFull GC対象になることに少し驚いた。
 
 GC対象となる領域を図にしてみたものが以下。
-![画像](https://tou0624.github.io//assets/study-jvm-memory-management/test4.svg)
+![画像](https://tou0624.github.io//assets/study-jvm-memory-management/image4.svg)
 
 Scavenge GCにてnew領域の中を移動して、利用していないオブジェクトは濾されていく模様。  
 オブジェクトは濾された回数を保持しており、規定の回数を超えたらold領域へ移動できる。  
