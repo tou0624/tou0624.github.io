@@ -61,7 +61,7 @@ CentOS6までは「iptables」を利用していたが、CentOS7からは「fire
 
 ゾーン（適用範囲の単位のようなもの）をNICへ適用する。  
 この概念はインバウンドのみ利用可能で、アウトバウンドのルール適用は ダイレクトルール or リッチルール 適用となる。
-![画像](/assets/study-firewalld/image1.svg)
+![画像](https://tou0624.github.io/assets/study-firewalld/image1.svg)
 
 ### NetFilter機能に関する用語
 - チェイン
